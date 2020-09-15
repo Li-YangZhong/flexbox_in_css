@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            display: inline-flex;
+            background-color: rgba(0, 0, 0, 0.1);
+            width: 100vw;
+        }
+
+        li:nth-of-type(3n-1) {
+            order: 3;
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        li:nth-of-type(3n+1) {
+            order: -1;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        li {
+            justify-content: space-between;
+            
+            flex:auto;
+            list-style: none;
+            height: 100px;
+            align-items: center;
+        }
+        li:focus-within {
+            background: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>1 <a href="">#</a></li>
+        <li>2 <a href="">#</a></li>
+        <li>3 <a href="">#</a></li>
+        <li>4 <a href="">#</a></li>
+        <li>5 <a href="">#</a></li>
+        <li>6 <a href="">#</a></li>
+        <li>7 <a href="">#</a></li>
+        <li>8 <a href="">#</a></li>
+        <li>9 <a href="">#</a></li>
+        <li>10 <a href="">#</a></li>
+        <li>11 <a href="">#</a></li>
+        <li>12 <a href="">#</a></li>
+    </ul>
+</body>
+
+</html>
